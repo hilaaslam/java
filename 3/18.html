@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="print()">Console Name</button>
+
+
+    <button onclick="myName()">My Name</button>
+    <button onclick="fatherName()">Father Name</button>
+    <h3 id="my"></h3>
+    <h3 id="father"></h3>
+
+    <br>
+    <br>
+    
+    <button onclick="changeColor()" style="background-color: orangered">Orangered</button>
+    <button onclick="changeColor()" style="background-color: chocolate;">Chocolate</button>
+    <button onclick="changeColor()" style="background-color:darksalmon;">Darksalmon</button>
+
+
+
+    <script>
+
+        function print() {
+            var firstName = "Hila"
+            var lastName = "Aslam"
+            console.log(firstName + " " + lastName)
+        }
+
+        function myName() {
+            var firstName = "Hila"
+            var lastName = "Aslam"
+            document.getElementById('my').innerHTML = firstName + " " + lastName
+        }
+
+        function fatherName() {
+            var firstName = "Mohammad"
+            var lastName = "Aslam"
+            document.getElementById('father').innerHTML = firstName + " " + lastName
+        }
+
+        function changeColor () {
+            document.getElementById('my').style.color = 'orangered'
+            document.getElementById('father').style.color = 'orangered'
+        }
+
+            function changeColor () {
+            document.getElementById('my').style.color = 'chocolate'
+            document.getElementById('father').style.color = 'chocolate'
+        }
+            
+        function changeColor () {
+            document.getElementById('my').style.color = 'darksalmon'
+            document.getElementById('father').style.color = 'darksalmon'
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
