@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="align-items: center; text-align: center;">
+
+        <label for="">Value 1</label>
+        <br>
+        <input type="text" name="" id="num1">
+        <br>
+        <br>
+        <label for="">Value 2</label>
+        <br>
+        <input type="text" name="" id="num2">
+        <br>
+        <br>
+        <button onclick="check()">Check</button>
+        <br>
+        <br>
+        <h1 id="ch"> </h1>
+    
+    </div>
+
+    <script>
+
+        function check() {
+
+            var a = document.getElementById('num1').value
+            var b = document.getElementById('num2').value
+
+            if (a > b) {
+                console.log("Greater than");
+                document.getElementById('ch').innerHTML = "Greater than"
+                document.getElementById('ch').style.color = "red"
+            }
+            else if (a == b) {
+                console.log("Equal to");
+                document.getElementById('ch').innerHTML = "Equal to"
+                document.getElementById('ch').style.color = "green"
+            }
+            else {
+                console.log("Less than");
+                document.getElementById('ch').innerHTML = "Less than"
+                document.getElementById('ch').style.color = "blue"
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
